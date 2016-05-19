@@ -1,6 +1,6 @@
 ﻿using Nancy;
 
-namespace SoManyZombies.Requests
+namespace CoOpTowerDefense.Requests
 {
     public class Index : NancyModule
     {

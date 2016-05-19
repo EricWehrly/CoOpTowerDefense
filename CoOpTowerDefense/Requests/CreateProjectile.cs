@@ -1,7 +1,7 @@
 ﻿using Nancy;
 using DisruptoLib.Factories;
 
-namespace SoManyZombies.Requests
+namespace CoOpTowerDefense.Requests
 {
     public class CreateProjectile : NancyModule
     {

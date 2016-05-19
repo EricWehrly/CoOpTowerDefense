@@ -2,7 +2,7 @@
 using System.Threading;
 using Nancy;
 
-namespace SoManyZombies.Requests
+namespace CoOpTowerDefense.Requests
 {
     public class RebuildServer : NancyModule
     {
