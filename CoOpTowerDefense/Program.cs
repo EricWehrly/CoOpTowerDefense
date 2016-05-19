@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using Nancy.Hosting.Self;
 
 namespace CoOpTowerDefense
 {
@@ -15,8 +17,7 @@ namespace CoOpTowerDefense
         private static void StartGameServer()
         {
             const string nancyUri = "http://localhost:1337/";
-
-            /*
+            
             using (var host = new NancyHost(new Uri(nancyUri)))
             {
                 host.Start();
@@ -30,8 +31,6 @@ namespace CoOpTowerDefense
 
                 _shutDownIssued = true;
             }
-            */
-            Console.ReadLine();
         }
 
         private static void StartGameLoop()
