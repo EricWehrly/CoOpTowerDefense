@@ -5,7 +5,7 @@ using DisruptoLib.Entities;
 
 namespace CoOpClient
 {
-    [JsType(JsMode.Clr, Filename = "res/ZombieGameClientScript.js")]
+    [JsType(JsMode.Clr, Filename = "res/CoOpClient.js")]
     public class CanvasCharacterRenderer
     {
         public Character Character { get; set; }

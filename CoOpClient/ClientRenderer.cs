@@ -8,7 +8,7 @@ using DisruptoLib.Factories;
 
 namespace CoOpClient
 {
-    [JsType(JsMode.Clr, Filename = "res/ZombieGameClientScript.js")]
+    [JsType(JsMode.Clr, Filename = "res/CoOpClient.js")]
     public static class ClientRenderer // : IRenderer?
     {
         private static List<CanvasCharacterRenderer> _characterRenderers;

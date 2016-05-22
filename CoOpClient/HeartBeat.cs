@@ -6,7 +6,7 @@ using DisruptoLib.Factories;
 
 namespace CoOpClient
 {
-    [JsType(JsMode.Clr, Filename = "res/ZombieGameClientScript.js")]
+    [JsType(JsMode.Clr, Filename = "res/CoOpClient.js")]
     public static class HeartBeat
     {
         private const int HeartBeatTimeOut = 200;   // Milliseconds

@@ -5,7 +5,7 @@ using SharpKit.jQuery;
 
 namespace CoOpClient
 {
-    [JsType(JsMode.Global, Filename = "res/CoOpClientScript.js")]
+    [JsType(JsMode.Global, Filename = "res/CoOpClient.js")]
     public class CoOpClientScript
     {
         private static IClientNetworkConnector _networkConnector;
@@ -75,7 +75,7 @@ namespace CoOpClient
     }
 
     // For some reason SharpKit requires we do this to write to the console normally.
-    [JsType(JsMode.Prototype, Name = "console")]
+    // [JsType(JsMode.Prototype, Name = "console")]
     public class console
     {
         public static void log(string message) { }
