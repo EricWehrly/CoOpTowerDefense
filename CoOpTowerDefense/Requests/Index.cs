@@ -6,7 +6,8 @@ namespace CoOpTowerDefense.Requests
     {
         public Index()
         {
-            Get["/"] = BuildIndexPage;
+            // Get["/"] = BuildIndexPage;
+            Get["/"] = _ => View["index"];
         }
 
         private object BuildIndexPage(dynamic parameters)

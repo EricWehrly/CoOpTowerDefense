@@ -1,6 +1,5 @@
 ﻿using Nancy;
 using Newtonsoft.Json;
-using DisruptoLib;
 using DisruptoLib.Factories;
 
 namespace CoOpTowerDefense.Requests
