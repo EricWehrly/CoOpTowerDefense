@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading;
 using Nancy.Hosting.Self;
 
 namespace CoOpTowerDefense
@@ -10,7 +11,6 @@ namespace CoOpTowerDefense
 
         static void Main(string[] args)
         {
-
             StartGameServer();
         }
 
@@ -20,13 +20,16 @@ namespace CoOpTowerDefense
             
             using (var host = new NancyHost(new Uri(nancyUri)))
             {
+                
                 host.Start();
 #if DEBUG
                 Process.Start(nancyUri);
 #endif
-
-                Console.ReadLine();
-
+                while (!_shutDownIssued)
+                {
+                    Thread.Sleep(60000);
+                }
+                //Console.ReadLine();
                 host.Stop();
 
                 _shutDownIssued = true;
