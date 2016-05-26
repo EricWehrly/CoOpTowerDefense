@@ -16,7 +16,7 @@ namespace CoOpTowerDefense
 
         private static void StartGameServer()
         {
-            const string nancyUri = "http://localhost:1337/";
+            const string nancyUri = "http://localhost:18557/";
             
             using (var host = new NancyHost(new Uri(nancyUri)))
             {
