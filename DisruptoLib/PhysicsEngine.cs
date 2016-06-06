@@ -6,7 +6,7 @@ using SharpKit.JavaScript;
 
 namespace DisruptoLib
 {
-    [JsType(JsMode.Clr, Filename = "res/SMZLib.js")]
+    [JsType(JsMode.Clr, Filename = "res/Lib.js")]
     public class PhysicsEngine
     {
         public static void MainLoop()

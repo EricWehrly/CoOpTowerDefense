@@ -5,7 +5,7 @@ namespace DisruptoLib
 {
     // Have to put this here because sharpkit is being dumb
 
-    [JsType(JsMode.Clr, Filename = "res/SMZLib.js")]
+    [JsType(JsMode.Clr, Filename = "res/Lib.js")]
     public class Point
     {
         public int X { get; set; }
@@ -20,7 +20,7 @@ namespace DisruptoLib
         }
     }
 
-    [JsType(JsMode.Clr, Filename = "res/SMZLib.js")]
+    [JsType(JsMode.Clr, Filename = "res/Lib.js")]
     public class Rectangle
     {
         public double X { get; set; }
@@ -57,7 +57,7 @@ namespace DisruptoLib
         }
     }
 
-    [JsType(JsMode.Clr, Filename = "res/SMZLib.js")]
+    [JsType(JsMode.Clr, Filename = "res/Lib.js")]
     public struct ConnectPacket
     {
         public string SessionId;

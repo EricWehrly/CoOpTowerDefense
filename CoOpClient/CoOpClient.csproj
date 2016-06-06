@@ -65,7 +65,8 @@
   <PropertyGroup>
     <PostBuildEvent>if not exist "$(SolutionDir)CoOpTowerDefense\$(OutDir)scripts" mkdir "$(SolutionDir)CoOpTowerDefense\$(OutDir)scripts"
 xcopy /Y "$(ProjectDir)\scripts" "$(SolutionDir)CoOpTowerDefense\$(OutDir)scripts"
-xcopy /Y "$(ProjectDir)res\CoOpTDClient.js" "$(SolutionDir)CoOpTowerDefense\$(OutDir)scripts"</PostBuildEvent>
+xcopy /Y "$(ProjectDir)res\CoOpTDClient.js" "$(SolutionDir)CoOpTowerDefense\$(OutDir)scripts"
+xcopy /Y "$(ProjectDir)..\DisruptoLib\res\DisruptoLib.js" "$(SolutionDir)CoOpTowerDefense\$(OutDir)scripts"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
