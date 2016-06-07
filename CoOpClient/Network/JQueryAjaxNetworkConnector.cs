@@ -10,7 +10,14 @@ namespace CoOpClient.Network
         {
             var ajaxSettings = new AjaxSettings
             {
+
+// TODO: Actually get the proper server hostname URL
+#if DEBUG
                 url = "http://localhost:1337/" + command,
+#else
+                url = "http://td.kleisden.com/" + command,
+#endif
+                // url = "http://localhost:1337/" + command,
                 cache = false,
                 data = data,
                 dataType = "",

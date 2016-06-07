@@ -44,7 +44,7 @@ namespace CoOpClient
             WindowRenderSize = new Rectangle(0, 0, HtmlContext.window.innerWidth, HtmlContext.window.innerHeight);
 
             _playerImage = new HtmlImageElement();
-            _playerImage.src = "res/Square.gif";
+            // _playerImage.src = "res/Square.gif";
             //HtmlContext.document.body.appendChild(_playerImage);
 
             _characterRenderers = new List<CanvasCharacterRenderer>();

@@ -61,23 +61,26 @@ namespace CoOpClient
 
         public static void DocumentMouseDown(Event arg)
         {
-            console.log("Mouse button " + arg.button + " down at " + arg.clientX + ", " + arg.clientY);
+            HtmlContext.console.log("Mouse button " + arg.button + " down at " + arg.clientX + ", " + arg.clientY);
+            // System.Console.WriteLine("Mouse button " + arg.button + " down at " + arg.clientX + ", " + arg.clientY);
 
             PlayerInput.ProcessPlayerMouseInput(arg.keyCode, arg.clientX, arg.clientY, true);
         }
 
         public static void DocumentMouseUp(Event arg)
         {
-            console.log("Mouse button " + arg.button + " up at " + arg.clientX + ", " + arg.clientY);
+            HtmlContext.console.log("Mouse button " + arg.button + " up at " + arg.clientX + ", " + arg.clientY);
 
             PlayerInput.ProcessPlayerMouseInput(arg.keyCode, arg.clientX, arg.clientY, false);
         }
     }
 
+    /*
     // For some reason SharpKit requires we do this to write to the console normally.
     // [JsType(JsMode.Prototype, Name = "console")]
     public class console
     {
         public static void log(string message) { }
     }
+    */
 }

@@ -25,7 +25,7 @@ namespace CoOpClient
 
         public static void ProcessPlayerKeyboardInput(int keyCode, bool keyIsDown)
         {
-            console.log(keyCode.ToString());
+            // HtmlContext.console.log(keyCode.ToString());
 
             /*
             if (IsPlayerMovementKey(keyCode))
