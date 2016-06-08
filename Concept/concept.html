@@ -1,0 +1,62 @@
+<head>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+	<style>
+		body { background-color: black; padding: 8px; }
+		
+		#container {		
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  
+		  height: 98%
+		}
+		
+		#theGrid td { 
+			border-left: solid #111; border-top: solid #111; border-width: 1px;
+			width: 80px; height: 80px;
+			text-align: center;
+			color: #400000;
+			font-size: 4.5em;
+		}
+		#theGrid td:last-child {
+			border-right: solid #111; border-width: 1px;
+		}
+		tr:last-child td {
+			border-bottom: solid #111; border-width: 1px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<table id="theGrid">
+		</table>
+	</div>
+	
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			var tableHtml = "";
+			var colcount = 8;
+			var rowcount = 8;
+			
+			for(var r = 0; r < rowcount; r++) {
+				tableHtml += "<tr>";
+				
+				for(var c = 0; c < colcount; c++) {
+					tableHtml += "<td></td>";
+				}
+				
+				tableHtml += "</tr>";
+			}
+			
+			$("#theGrid").html(tableHtml);
+			
+			var downArrow = '<i class="fa fa-angle-double-down" aria-hidden="true"></i>'
+			
+			$("td")[1].innerHTML = downArrow;
+		});
+	</script>
+</body>
