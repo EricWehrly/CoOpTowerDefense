@@ -19,7 +19,7 @@ namespace CoOpTowerDefense
 #if DEBUG
             const string nancyUri = "http://localhost:1337/";
 #else
-            const string nancyUri = "http://localhost:80/";
+            const string nancyUri = "http://localhost:9001/";
 #endif
 
             using (var host = new NancyHost(new Uri(nancyUri)))

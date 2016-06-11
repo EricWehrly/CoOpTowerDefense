@@ -18,7 +18,7 @@
 			border-left: solid #111; border-top: solid #111; border-width: 1px;
 			width: 80px; height: 80px;
 			text-align: center;
-			color: #400000;
+			color: #190000;
 			font-size: 4.5em;
 		}
 		#theGrid td:last-child {
@@ -54,9 +54,59 @@
 			
 			$("#theGrid").html(tableHtml);
 			
-			var downArrow = '<i class="fa fa-angle-double-down" aria-hidden="true"></i>'
+			var entrance = '<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>';
+			
+			// var exit = '<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>';
+			// var exit = '<span class="fa-stack" style="font-size: .5em;"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-flag fa-stack-1x fa-inverse"></i></span>'
+			var exit = '<span class="fa-stack" style="font-size: .5em;"><i class="fa fa-angle-double-down fa-stack-2x"></i><i class="fa fa-flag fa-stack-1x fa-inverse"></i></span>'
+			
+			var downArrow = '<i class="fa fa-angle-double-down" aria-hidden="true"></i>';
+			var rightArrow = '<i class="fa fa-angle-double-right" aria-hidden="true"></i>';
+			var leftArrow = '<i class="fa fa-angle-double-left" aria-hidden="true"></i>';
+			
+			var rock = '<i style="color: #666;" class="fa fa-truck" aria-hidden="true"></i>';
+			
+			var tree = '<i style="color: #003300;" class="fa fa-tree" aria-hidden="true"></i>';
+			
+			var tower = '<i class="fa fa-building-o" style="color: #FFF;" aria-hidden="true"></i>';
 			
 			$("td")[1].innerHTML = downArrow;
+			$("td")[9].innerHTML = rightArrow;
+			$("td")[10].innerHTML = rightArrow;
+			$("td")[11].innerHTML = rightArrow;
+			$("td")[12].innerHTML = downArrow;
+			$("td")[12+8].innerHTML = downArrow;
+			$("td")[28].innerHTML = leftArrow;
+			$("td")[12+15].innerHTML = leftArrow;
+			$("td")[12+14].innerHTML = downArrow;
+			$("td")[24+10].innerHTML = downArrow;
+			// $("td")[24+17].innerHTML = rightArrow;
+			// $("td")[24+17].innerHTML = rightArrow;
+			$("td")[24+18].innerHTML = rightArrow;
+			$("td")[24+19].innerHTML = rightArrow;
+			$("td")[24+20].innerHTML = rightArrow;
+			$("td")[24+21].innerHTML = rightArrow;
+			$("td")[24+22].innerHTML = downArrow;
+			$("td")[54].innerHTML = downArrow;
+			$("td")[54+8].innerHTML = leftArrow;
+			$("td")[54+7].innerHTML = leftArrow;
+			$("td")[54+6].innerHTML = leftArrow;
+			$("td")[54+5].innerHTML = leftArrow;
+			$("td")[54+4].innerHTML = leftArrow;
+			
+			$("td")[57].innerHTML = downArrow;
+			
+			$("td")[9+8].innerHTML = rock;
+			$("td")[9+9].innerHTML = tower;
+			$("td")[19].innerHTML = rock;
+			$("td")[50].innerHTML = rock;
+			$("td")[51].innerHTML = rock;
+			
+			$("td")[28+7].innerHTML = tree;
+			$("td")[28+8].innerHTML = tree;
+			
+			$("td")[52].innerHTML = tower;
+			$("td")[53].innerHTML = tower;
 		});
 	</script>
 </body>
